@@ -1,0 +1,89 @@
+/* App.css */
+.app {
+  font-family: Arial, sans-serif;
+}
+
+.main-content {
+  text-align: center;
+}
+
+.image-container {
+  max-width: 1000px;
+  margin: 0 auto; /* Center the container horizontally */
+  overflow: hidden; /* Hide content that overflows */
+  position: relative; /* Set as positioning context for absolutely positioned child */
+}
+
+.home-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.project-container {
+  border: 2px solid #9CAED2; /* Add an outline with a specific color */
+  padding: 10px; /* Add padding to create space between the border and content */
+  margin: 20px auto; /* Center the project containers and create spacing between them */
+}
+
+.project-image {
+  max-width: 100%; /* Adjust the image width to fit within the container */
+  height: auto;
+}
+
+.project-title {
+  margin-top: 10px; /* Add some spacing between the image and title */
+}
+
+.project-description {
+  margin-top: 10px; /* Add some spacing between the title and description */
+}
+
+
+.social-media {
+  background: linear-gradient(#9CAED2, #F0C1AF); /* Apply gradient background */
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 20px 0; /* Add padding to the top and bottom of the section */
+}
+
+.social-media a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-media img {
+  width: 30px; /* Adjust the width of the icons as needed */
+  height: 30px; /* Adjust the height of the icons as needed */
+}
+
+.github-icon {
+  max-width: 15%;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.project-image {
+  max-width: 35%;
+  max-height: 500px;
+  margin: 0 auto;
+}
+
+.color-block {
+  background-image: linear-gradient(to bottom, #9CAED2, #F0C1AF);
+  padding: 20px;
+  text-align: center;
+  
+}
+
+.contact {
+  background: #9CAED2;
+}
+
+.footer {
+  background: #F0C1AF; /* Apply gradient background */
+  padding: 20px;
+  text-align: center;
+}
+
