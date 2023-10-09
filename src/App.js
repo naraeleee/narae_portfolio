@@ -34,9 +34,7 @@ const App = () => {
               address accessibility needs in society. I am passionate about
                using data-driven approaches to create positive impacts and improve
                 the lives of individuals with diverse accessibility requirements.<i></i></div>
-        <div className="color-block" style={{ marginTop: '30px'}}>
-  
-        </div>
+       
         
         <div className="recent-projects">
   <h2>Recent Projects</h2>
@@ -54,7 +52,7 @@ const App = () => {
         alt={project.title}
       />
       <h3 className="project-title">{project.title}</h3>
-      <p className="project-description">
+      <p className="box">
         {project.description.startsWith('http') ? (
           <a href={project.description} target="_blank" rel="noopener noreferrer">
           </a>
