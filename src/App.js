@@ -8,6 +8,7 @@ import project1Image from './images/project1.jpg';
 import project2Image from './images/project2.jpg';
 import linkedinIcon from './images/linkedin.png'; 
 import githubIcon from './images/github.png'
+import backgroundImage from './images/background.png'
 
 const App = () => {
   const projects = [
@@ -21,20 +22,20 @@ const App = () => {
   ];
 
   return (
-    <div className="app">
+    <div className="app" style={{ backgroundImage: `url(${backgroundImage})` }}>
       <Header />
       <main className="main-content">
         <div className="image-container">
           <img className="home-image" src={homeImage} alt="Home" />
         </div>
-        <div className="color-block" style={{ marginTop: '30px'}}>
-          <h1>Welcome to Narae's Website!</h1>
-          <h3>Hi! I'm Narae. I am a former/aspiring AI Engineer! My objective is
+        <div class="box">Hi! I'm Narae. I am a former/aspiring AI Engineer! My objective is
              to harness my analytical and technical expertise to develop 
              ethical and innovative AI-integrated software solutions that
               address accessibility needs in society. I am passionate about
                using data-driven approaches to create positive impacts and improve
-                the lives of individuals with diverse accessibility requirements.</h3>
+                the lives of individuals with diverse accessibility requirements.<i></i></div>
+        <div className="color-block" style={{ marginTop: '30px'}}>
+  
         </div>
         
         <div className="recent-projects">
