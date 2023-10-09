@@ -6,15 +6,18 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import homeImage from './images/home.jpg';
 import project1Image from './images/project1.jpg';
 import project2Image from './images/project2.jpg';
-import linkedinIcon from './images/linkedin.png'; // Import LinkedIn icon image
-import instagramIcon from './images/instagram.png'; // Import Instagram icon image
+import linkedinIcon from './images/linkedin.png'; 
 import githubIcon from './images/github.png'
 
 const App = () => {
   const projects = [
-    { title: 'Sign Bridge', image: project1Image, description: 'Sign Bridge is a website to learn and translate sign language. We hope to break the barrier between signers and hearings' },
-    { title: 'UTimetable', image: project2Image, description: 'https://github.com/CSC207-2022F-UofT/course-project-t_t' },
-    // Add more projects here
+    { title: 'Sign Bridge', image: project1Image, description: 'Implemented an interactive American Sign Language learning web application where users can utilize a webcam to demonstrate sign language and receive real-time feedbacks.\nTrained a Sign Language Recognition model with Convolutional Neural Network Python libraries (Pytorch, Numpy, Tensorflow, Mediapipe),\nwhere the model is capable of real-time hand motion recognition.' },
+    
+    {
+      title: 'UTimetable',
+      image: project2Image,
+      description: "Developed a Java-based application that empowers users to\ncreate accounts, manage their timetables, and employs advanced algorithms to identify overlapping free time slots among friends"
+    }
   ];
 
   return (
@@ -25,8 +28,13 @@ const App = () => {
           <img className="home-image" src={homeImage} alt="Home" />
         </div>
         <div className="color-block" style={{ marginTop: '30px'}}>
-          <h2>Welcome to Narae's Portfolio!</h2>
-          <p>"I am Narae Lee"</p>
+          <h1>Welcome to Narae's Website!</h1>
+          <h3>Hi! I'm Narae. I am a former/aspiring AI Engineer! My objective is
+             to harness my analytical and technical expertise to develop 
+             ethical and innovative AI-integrated software solutions that
+              address accessibility needs in society. I am passionate about
+               using data-driven approaches to create positive impacts and improve
+                the lives of individuals with diverse accessibility requirements.</h3>
         </div>
         
         <div className="recent-projects">
@@ -48,11 +56,6 @@ const App = () => {
       <p className="project-description">
         {project.description.startsWith('http') ? (
           <a href={project.description} target="_blank" rel="noopener noreferrer">
-            <img
-              className="github-icon"
-              src={githubIcon}
-              alt="GitHub"
-            />
           </a>
         ) : (
           project.description
@@ -73,8 +76,8 @@ const App = () => {
           <a href="https://www.linkedin.com/in/narae-lee-a3390721b/" target="_blank" rel="noopener noreferrer">
             <img src={linkedinIcon} alt="LinkedIn" />
           </a>
-          <a href="https://www.instagram.com/narae_dev/" target="_blank" rel="noopener noreferrer">
-            <img src={instagramIcon} alt="Instagram" />
+          <a href="https://github.com/naraeleee" target="_blank" rel="noopener noreferrer">
+            <img src={githubIcon} alt="Github" />
           </a>
         </div>
       
