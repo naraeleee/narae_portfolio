@@ -14,7 +14,7 @@ const Home = () => {
         <img className="home-image" src={homeImage} alt="Home" />
       </div>
       <div className="box">
-        Hi! I'm Narae. I am a former/aspiring AI Engineer! My objective is
+        Hi! I'm Narae. My objective is
         to harness my analytical and technical expertise to develop 
         ethical and innovative AI-integrated software solutions that
         address accessibility needs in society. I am passionate about
