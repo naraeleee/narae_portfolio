@@ -1,0 +1,10 @@
+.project-image {
+    width: 200px; /* or any size you prefer */
+    height: auto; /* maintain aspect ratio */
+}
+
+.project-image-small {
+    width: 150px; /* smaller width */
+    height: auto;
+}
+

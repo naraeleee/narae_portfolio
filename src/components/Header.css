@@ -35,3 +35,14 @@
   
 }
 
+@media screen and (max-width: 768px) {
+  .menu-list {
+    flex-direction: column; /* Stack menu items vertically on smaller screens */
+    text-align: center; /* Center-align the menu items */
+  }
+
+  .menu-list li {
+    margin: 10px 0; /* Add spacing between vertically stacked menu items */
+  }
+}
+
