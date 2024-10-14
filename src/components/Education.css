@@ -1,0 +1,13 @@
+.education-content {
+    display: flex;
+    align-items: center; /* Vertically align text and image */
+    justify-content: space-between; /* Space between text and image */
+    gap: 20px; /* Add spacing between text and image */
+  }
+  
+  .uoft-image {
+    max-width: 100px; /* Adjust the size as necessary */
+    height: auto;
+    border-radius: 8px; /* Optional: adds rounded corners */
+  }
+  

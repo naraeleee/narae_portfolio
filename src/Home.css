@@ -1,0 +1,125 @@
+/* src/Home.css */
+
+.image-container {
+    position: relative;
+    max-width: 100%;
+    height: 500px;
+    margin-bottom: 5px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay on the image */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .hero-title {
+    font-size: 3em;
+    font-weight: bold;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5em;
+    margin-top: 10px;
+  }
+
+  .home-image {
+    margin-top: 90px;   
+  }
+
+  
+  /* About Me Section */
+  .about-section {
+    padding: 50px 0;
+    background-color: #f5f5f5;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .about-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  /* Projects Section */
+  .recent-projects {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .projects-carousel .project-container {
+    padding: 20px;
+  }
+  
+  .project-container {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .project-container:hover {
+    transform: scale(1.05);
+  }
+  
+  .project-title {
+    font-size: 1.8em;
+    margin-top: 15px;
+  }
+  
+  .project-description {
+    padding: 15px;
+    font-size: 1.1em;
+    text-align: left;
+  }
+  
+  /* Skills Section */
+  .skills-section {
+    padding: 50px 0;
+    background-color: #f0f8ff;
+    text-align: center;
+  }
+  
+  /* Experience Section */
+  .experience-section {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    padding: 50px 0;
+    background-color: #f5f5f5;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .social-media {
+    margin-top: 20px;
+  }
+  
+  .social-media img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-media img:hover {
+    transform: scale(1.2);
+  }
+  

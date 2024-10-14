@@ -4,9 +4,8 @@ import Header from './components/Header';
 import Home from './Home'; // Import the Home component
 import Projects from './Projects'; // Import the Projects component
 import './App.css';
-import project1Image from './images/project1.jpg';
-import project2Image from './images/project2.jpg';
 import SignBridge from './SignBridge';
+
 
 const App = () => {
 
@@ -19,7 +18,6 @@ const App = () => {
           <Route path="/SignBridge" element={<SignBridge />} />
           <Route path="/Projects" element={<Projects />} />
         </Routes>
-        {/* Footer could be placed here if it's shared across all pages */}
       </div>
     </BrowserRouter>
   );

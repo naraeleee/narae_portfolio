@@ -1,5 +1,6 @@
 /* App.css */
 
+
 /* For screens smaller than 768px */
 @media (max-width: 768px) {
   /* Add your responsive styles here */
@@ -8,21 +9,16 @@
     font-size: 18px;
     height: auto;
   }
-}
+}a
 
-/* For screens larger than 768px */
-@media (min-width: 769px) {
-  /* Add your desktop styles here */
-  .box {
-    width: 50%;
-    font-size: 20px;
-    height: 150px;
-  }
-}
+
 
 .app {
   font-family: Arial, sans-serif;
-  background-color: #9CAED2;
+  background-color: rgb(0, 0, 0);
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat; 
 }
 
 .main-content {
@@ -46,6 +42,8 @@
   border: 2px solid #9CAED2; /* Add an outline with a specific color */
   padding: 10px; /* Add padding to create space between the border and content */
   margin: 20px auto; /* Center the project containers and create spacing between them */
+  max-width: 800px; /* Limit the maximum width */
+  line-height: 1.6; /* Increase line height for better readability */
 }
 
 .project-image {
@@ -59,11 +57,13 @@
 
 .project-description {
   margin-top: 10px; /* Add some spacing between the title and description */
+  text-align: justify; /* Justify the text for better alignment */
 }
 
 
 .social-media {
-  background: linear-gradient(#9CAED2, #F0C1AF); /* Apply gradient background */
+  /* background: linear-gradient(#9CAED2, #F0C1AF);  */
+  background-color: white;
   display: flex;
   justify-content: center;
   margin-top: 20px;
@@ -92,23 +92,8 @@
   margin: 0 auto;
 }
 
-.color-block {
-  background-image: linear-gradient(to bottom, #9CAED2, #F0C1AF);
-  padding: 20px;
-  text-align: center;
-  
-}
 
-.contact {
-  background: #9CAED2;
-}
-
-.footer {
-  background: #F0C1AF; /* Apply gradient background */
-  padding: 20px;
-  text-align: center;
-}
-
+/* 
 @font-face {
   font-family: "Pokemon GB";
   src: url("https://dl.dropboxusercontent.com/u/10822923/Pokemon_GB/Pokemon_GB.eot?") format("eot"),
@@ -117,9 +102,9 @@
        url("https://dl.dropboxusercontent.com/u/10822923/Pokemon_GB/Pokemon_GB.svg#PokemonGB") format("svg");
   font-weight: normal;
   font-style: italic;
-}
+} */
 
-.box {
+/* .box {
   font-size: 20px;
   font-family: "Pokemon GB", Arial, sans-serif;
   border-radius: 2px;
@@ -134,8 +119,8 @@
               inset 0 1px 0 1px black,
               0 0 0 1px black,
               inset 0 0 0 1px black;
-}
-.box > i {
+} */
+/* .box > i {
   width: 0;
   height: 0;
   border: 5px solid transparent;
@@ -143,10 +128,10 @@
   margin-top: 23px;
   animation: bounce 0.5s ease-in-out 0 infinite alternate;
   float: right;
-}
-
+} */
+/* 
 @keyframes bounce {
   from { margin-top: 20px; }
   to { margin-top: 23px; }
-}
+} */
 
