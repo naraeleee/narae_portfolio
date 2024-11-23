@@ -42,7 +42,7 @@ const Home = () => {
         </Carousel>
       </section>
 
-      <Education />
+      
 
       {/* Skills Section */}
       <Skills />
@@ -50,13 +50,15 @@ const Home = () => {
       {/* Experience Section */}
       <Experience />
 
-      
+      <Education />
 
       {/* Contact Section */}
       <section className="contact-section" id="contact">
         <h2>Contact Me</h2>
         <p>Email: <a href="mailto:narae828@hotmail.com">narae828@hotmail.com</a></p>
-        <div className="social-media">
+        
+      </section>
+      <div className="social-media">
           <a href="https://www.linkedin.com/in/narae-lee-a3390721b/" target="_blank" rel="noopener noreferrer">
             <img src={linkedinIcon} alt="Visit my LinkedIn Profile" />
           </a>
@@ -64,7 +66,6 @@ const Home = () => {
             <img src={githubIcon} alt="Visit my GitHub Profile" />
           </a>
         </div>
-      </section>
     </main>
   );
 };

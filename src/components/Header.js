@@ -25,7 +25,6 @@ function Header() {
             </Link>
           </li>
           {/* Continue using MenuItem for other links, assuming it handles the Link component internally */}
-          <MenuItem label="Courses" />
           <MenuItem label="Contact" />
         </ul>
       </nav>
