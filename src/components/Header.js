@@ -19,13 +19,12 @@ function Header() {
               SignBridge
             </Link>
           </li>
-          <li className="menu-item">
+          {/* <li className="menu-item">
             <Link to="./Projects">
               Projects
             </Link>
           </li>
-          {/* Continue using MenuItem for other links, assuming it handles the Link component internally */}
-          <MenuItem label="Contact" />
+          <MenuItem label="Contact" /> */}
         </ul>
       </nav>
     </header>

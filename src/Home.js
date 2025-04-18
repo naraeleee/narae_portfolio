@@ -33,12 +33,26 @@ const Home = () => {
           showStatus={false}
         >
           {projects.map((project, index) => (
-            <div className="project-container" key={index}>
-              <img className="project-image" src={project.image} alt={project.title} />
-              <h3 className="project-title">{project.title}</h3>
-              <p className="project-description">{project.description}</p>
-            </div>
-          ))}
+  <div className="project-container" key={index}>
+    <img className="project-image" src={project.image} alt={project.title} />
+    <h3 className="project-title">{project.title}</h3>
+    <p className="project-description">
+      {project.description.split('\n').map((line, i) => (
+        <span key={i}>{line}<br /></span>
+      ))}
+    </p>
+    {project.link && (
+      <a
+        className="project-link"
+        href={project.link}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Watch Demo
+      </a>
+    )}
+  </div>
+))}
         </Carousel>
       </section>
 
