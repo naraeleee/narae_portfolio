@@ -5,11 +5,11 @@
     text-align: center;   /* This centers the text inside the divs */
   }
   
-  .first, .second, .third {
+  .first, .second, .third, .fourth {
     margin-bottom: 2rem;  /* Add space between sections */
   }
   
-  .signbridge-image1, .signbridge-image2, .signbridge-image3 {
+  .signbridge-image1, .signbridge-image2, .signbridge-image3, .signbridge-logo {
     max-width: 500px;   /* Max width to control image size */
     width: 100%;        /* Make the image responsive */
     height: auto;       /* Maintain aspect ratio */
@@ -18,7 +18,7 @@
     border-radius: 12px;
   }
   
-  .first p, .second p, .third p {
+  .first p, .second p, .third p, .fourth p {
     max-width: 600px;  /* Optional: restrict the text width */
     margin: 0 auto;    /* Center the paragraphs */
   }

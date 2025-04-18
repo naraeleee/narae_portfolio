@@ -2,6 +2,7 @@ import React from 'react';
 import SignBridge1 from './images/signbridge.png';
 import SignBridge2 from './images/signbridge2.png';
 import SignBridge3 from './images/signbridge3.png';
+import SignBridgeLogo from './images/signbridgelogo.png';
 import './SignBridge.css';
 
 function SignBridge() {
@@ -10,22 +11,25 @@ function SignBridge() {
       <div className="first">
         <img className="signbridge-image1" src={SignBridge1} alt="Sign Bridge demo screenshot" />
         <p>
-          Sign Bridge is a user-friendly React.js based web application that's all about making American Sign Language (ASL) easy and fun to learn, while also offering a handy translation feature. <br />
-          We designed it with a big goal in mind: to shatter language barriers and create a stronger, more inclusive bond between the deaf and hearing communities.
+        Sign Bridge is a Python-based American Sign Language (ASL) learning app integrated with a real-time sign language recognition model. This model, trained with computer vision and machine learning libraries, enables real-time feedback to users through a webcam quiz feature, allowing for hands-on learning.
         </p>
       </div>
       <div className="second">
-      <img className="signbridge-image2" src={SignBridge2} alt="Sign Bridge demo screenshot" />
+      <img className="signbridge-logo" src={SignBridgeLogo} alt="Sign Bridge demo screenshot" />
         <p>
-          At the heart of Sign Bridge is an innovative, real-time Sign Language Recognition model trained by Python ML Frameworks (Tensorflow, Mediapipe, Numpy, OpenCV). <br />
-          This means you can hop onto the Webcam Quiz feature and practice your ASL signs right there and then. It's interactive, engaging, and a great way to get hands-on experience. Plus, you'll be learning in a way that sticks, thanks to the immediate feedback and fun challenges.
+        For a long time, I have been actively seeking the opportunity to create a positive impact by addressing accessibility needs in society through my data science and programming expertise. Then, I learned that the communication barrier between deaf and hearing individuals creates a social gap between communities.
         </p>
       </div>
       <div className="third">
+      <img className="signbridge-image2" src={SignBridge2} alt="Sign Bridge demo screenshot" />
+        <p>
+        To resolve this problem, we must change the perception of sign language. Sign language is not only something deaf people use – it is a language that everyone can learn to communicate more inclusively.
+        </p>
+      </div>
+      <div className="fourth">
       <img className="signbridge-image3" src={SignBridge3} alt="Sign Bridge demo screenshot" />
         <p>
-          But that's not all. Sign Bridge also doubles as a translator, bridging the gap between spoken and sign language. <br />
-          Whether you're learning ASL, teaching it, or just want to communicate more effectively with the deaf community, Sign Bridge is your go-to tool. It's more than just an app, it's a step towards a more inclusive world.
+        That is why I implemented Sign Bridge, to make learning ASL fun and accessible for everyone. However, sign bridge is not just a learning app, but it is a step toward making the world more inclusive. By promoting the integration of sign language into our everyday communication and embracing deafness not just as a disability but as part of a vibrant culture, we can create a society where communication is accessible to all.
         </p>
       </div>
     </section>
