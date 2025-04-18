@@ -1,20 +1,23 @@
-// src/components/Experience.js
 import React from 'react';
+import AmdLogo from '../images/amd.jpeg';
+import DataUsLogo from '../images/dataus.jpeg';
+import './Experience.css'
 
 const Experience = () => {
   const experiences = [
     {
       title: 'Data Scientist Co-op',
-      company: 'AMD',
+      companyLogo: AmdLogo,
       duration: 'May 2024 - Present',
       description: (
         <p>
-         • Data Scientist/Yield Modeling Engineer
+         • Working as a Data Scientist/Yield Engineer
         </p>
       ),
     },
     {
       title: 'AI Engineer Intern',
+      companyLogo: DataUsLogo,
       company: 'DataUs Inc.',
       duration: 'Jun 2023 - Aug 2023',
       description: (
@@ -31,7 +34,6 @@ const Experience = () => {
         </>
       ),
     },
-    // Add more experiences as needed
   ];
 
   return (
@@ -39,8 +41,11 @@ const Experience = () => {
       <h2>My Experience</h2>
       {experiences.map((exp, index) => (
         <div key={index} className="experience-item">
-          <h3>{exp.title}</h3>
-          <h4>{exp.company}</h4>
+          <div className="company-info">
+            {exp.companyLogo && <img src={exp.companyLogo} alt={`${exp.company} logo`} className="company-logo" />}
+            <h3>{exp.title}</h3>
+            <h4>{exp.company}</h4>
+          </div>
           <span>{exp.duration}</span>
           {exp.description}
         </div>
