@@ -9,7 +9,7 @@ const Experience = () => {
       duration: 'May 2024 - Present',
       description: (
         <p>
-          Data Scientist/Yield Modeling Engineer
+         • Data Scientist/Yield Modeling Engineer
         </p>
       ),
     },
@@ -20,13 +20,7 @@ const Experience = () => {
       description: (
         <>
           <p>
-            • Implemented an American Sign Language Learning platform <a href="https://github.com/naraeleee/SignBridge_Beta" target="_blank" rel="noopener noreferrer">"Sign Bridge"</a> to address accessibility challenges with language barriers and promote active learning in the field of sign language.
-          </p>
-          <p>
-            • Trained a Sign Language Recognition model with Python Machine Learning Frameworks (Pytorch, Tensorflow, Mediapipe, Scikit-learn, Keras, Numpy).
-          </p>
-          <p>
-            • Developed and launched a web application with Hand Sign Recognition model utilizing Convolutional Neural Networks, enabling real-time Sign Language translation feature.
+            • Trained a model with Python Machine Learning Frameworks (Pytorch, Tensorflow, Mediapipe, Scikit-learn, Keras, Numpy).
           </p>
           <p>
             • Developed Deep Learning Algorithms to improve model’s performance from 60% to 98%.
