@@ -5,6 +5,7 @@ import Home from './Home'; // Import the Home component
 import Projects from './Projects'; // Import the Projects component
 import './App.css';
 import SignBridge from './SignBridge';
+import Experience from './components/Experience';
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/Experience" element={<Experience />} />
           <Route path="/SignBridge" element={<SignBridge />} />
           <Route path="/Projects" element={<Projects />} />
         </Routes>

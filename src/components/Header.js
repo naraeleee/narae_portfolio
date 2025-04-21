@@ -14,6 +14,13 @@ function Header() {
               Home
             </Link>
           </li>
+          
+          <li className="menu-item">
+            <Link to="/Experience">
+              Experience
+            </Link>
+          </li>
+
           <li className="menu-item">
             <Link to="/SignBridge">
               SignBridge

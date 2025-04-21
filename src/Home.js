@@ -52,7 +52,7 @@ const Home = () => {
         </Carousel>
       </section>
 
-      <Experience />
+      {/* <Experience /> */}
       
       <Skills />
 
