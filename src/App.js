@@ -6,6 +6,7 @@ import Projects from './Projects'; // Import the Projects component
 import './App.css';
 import SignBridge from './SignBridge';
 import Experience from './components/Experience';
+import Activities from './components/Activities';
 
 
 const App = () => {
@@ -18,7 +19,8 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/Experience" element={<Experience />} />
           <Route path="/SignBridge" element={<SignBridge />} />
-          <Route path="/Projects" element={<Projects />} />
+          <Route path="/Activities" element={<Activities />} />
+          {/* <Route path="/Projects" element={<Projects />} /> */}
         </Routes>
       </div>
     </BrowserRouter>

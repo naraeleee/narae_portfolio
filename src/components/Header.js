@@ -1,7 +1,7 @@
 // Header.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import MenuItem from './MenuItem';
+// import MenuItem from './MenuItem';
 import './Header.css';
 
 function Header() {
@@ -24,6 +24,12 @@ function Header() {
           <li className="menu-item">
             <Link to="/SignBridge">
               SignBridge
+            </Link>
+          </li>
+
+          <li className="menu-item">
+            <Link to="/Activities">
+              Activities
             </Link>
           </li>
           {/* <li className="menu-item">

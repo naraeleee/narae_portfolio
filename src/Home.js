@@ -2,13 +2,13 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import homeImage from './images/home.jpg'; 
+// import homeImage from './images/home.jpg'; 
 import projects from './projectsData'; 
 import linkedinIcon from './images/linkedin.png'; 
 import githubIcon from './images/github.png';
 import About from './components/About';
 import Skills from './components/Skills';
-import Experience from './components/Experience';
+// import Experience from './components/Experience';
 import Education from './components/Education';
 import './Home.css'
 
