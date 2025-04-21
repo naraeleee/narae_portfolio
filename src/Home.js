@@ -15,10 +15,6 @@ import './Home.css'
 const Home = () => {
   return (
     <main className="main-content">
-      {/* Hero Section */}
-      <section className="image-container" id="hero">
-        <img className="home-image" src={homeImage} alt="Narae Lee working on AI projects" />
-      </section>
 
       {/* About Me Section */}
       <About />
@@ -56,13 +52,10 @@ const Home = () => {
         </Carousel>
       </section>
 
+      <Experience />
       
-
-      {/* Skills Section */}
       <Skills />
 
-      {/* Experience Section */}
-      <Experience />
 
       <Education />
 

@@ -5,7 +5,7 @@ import './Education.css';
 
 const About = () => {
   return (
-    <section className="about-section">
+    <section className="edu-section">
       <h2>Education</h2>
       <div className="education-image">
           <img className="uoft-image" src={uoft} alt="University of Toronto" />

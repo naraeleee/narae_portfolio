@@ -1,12 +1,13 @@
 import React from 'react';
 import AmdLogo from '../images/amd.jpeg';
 import DataUsLogo from '../images/dataus.jpeg';
-import './Experience.css'
+import './Experience.css';
 
 const Experience = () => {
   const experiences = [
     {
       title: 'Data Scientist Co-op',
+      company: 'AMD',
       companyLogo: AmdLogo,
       duration: 'May 2024 - Present',
       description: (

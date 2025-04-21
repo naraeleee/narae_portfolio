@@ -6,7 +6,6 @@ const Skills = () => {
     <section className="skills-section">
       <h2>Skills</h2>
 
-      {/* Software Engineering Skills */}
       <div className="skills-category">
         <h3>Software Engineering</h3>
         <div className="skills-card">

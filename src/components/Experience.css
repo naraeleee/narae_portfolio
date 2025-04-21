@@ -1,14 +1,65 @@
-.company-info {
+.experience-section {
+    background-color: #f5f5f5;
+    padding: 2rem;
+    border-radius: 16px;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  .experience-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  
+  .experience-item {
+    background-color: white;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .company-info {
     display: flex;
-    align-items: center; /* Center the items vertically */
-    justify-content: center; /* Center the items horizontally */
-    text-align: center; /* Optional: Ensures text is centered if necessary */
-    flex-direction: column; /* This ensures the company name and logo stack vertically if needed */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 1rem;
   }
   
   .company-logo {
-    width: 200px; /* Adjust size as needed */
+    width: 150px;
     height: auto;
-    margin-left: 10px; /* Optional: Space between the company name and the logo */
+    margin-bottom: 0.8rem;
+    border-radius: 8px;
+  }
+  
+  .experience-item h3 {
+    margin: 0.5rem 0 0.2rem;
+    font-size: 1.2rem;
+  }
+  
+  .experience-item h4 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .experience-item span {
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #666;
+  }
+  
+  .experience-item p {
+    text-align: left;
+    margin: 0.5rem 0;
+    line-height: 1.6;
   }
   
