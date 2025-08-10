@@ -21,11 +21,11 @@ function Header() {
             </Link>
           </li>
 
-          <li className="menu-item">
+          {/* <li className="menu-item">
             <Link to="/SignBridge">
               SignBridge
             </Link>
-          </li>
+          </li> */}
 
           <li className="menu-item">
             <Link to="/Activities">
