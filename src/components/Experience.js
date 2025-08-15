@@ -9,11 +9,23 @@ const Experience = () => {
       title: 'Data Scientist Co-op',
       company: 'AMD',
       companyLogo: AmdLogo,
-      duration: 'May 2024 - Present',
+      duration: 'May 2024 - Aug 2025',
       description: (
+        <>
         <p>
-         • Working as a Data Scientist/Yield Engineer
+         • Deployed a full-stack AI-driven web application to compare semiconductor yield models, reducing analysis time by 80%
         </p>
+        <p>
+        • Automated data pipelines with Snowflake Python Connector to extract, preprocess, and validate large-scale manufacturing datasets
+       </p>
+       <p>
+        • Applied prompt engineering and data preprocessing to convert complex JSON outputs into stakeholder-friendly Excel reports using OpenAI API
+       </p>
+       <p>
+        • Supported statistical yield modeling analyses to optimize manufacturing processes
+       </p>
+       </>
+        
       ),
     },
     {

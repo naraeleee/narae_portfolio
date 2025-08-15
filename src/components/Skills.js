@@ -21,18 +21,21 @@ const Skills = () => {
               <div className="skill-tag"><FaJava /> Java</div>
               <div className="skill-tag"><DiMysql /> SQL</div>
               <div className="skill-tag"><FaReact /> React</div>
+              <div className="skill-tag"> Swift</div>
               <div className="skill-tag"><DiLinux /> Linux</div>
               <div className="skill-tag">C/C++</div>
               <div className="skill-tag">GIT</div>
+              <div className="skill-tag"> RESTful API</div>
             </div>
           </div>
 
           <div className="skills-card">
             <h4>Skills</h4>
             <div className="skills-list">
+            <div className="skill-tag">Full-Stack Development</div>
               <div className="skill-tag">Frontend Development</div>
               <div className="skill-tag">Backend Development</div>
-              <div className="skill-tag">DBMS</div>
+              <div className="skill-tag">Web/App Development</div>
               <div className="skill-tag">Object-Oriented Programming</div>
             </div>
           </div>
@@ -63,6 +66,8 @@ const Skills = () => {
               <div className="skill-tag">Deep Learning</div>
               <div className="skill-tag">Computer Vision</div>
               <div className="skill-tag">LLM</div>
+              <div className="skill-tag">Prompt Engineering</div>
+              <div className="skill-tag">Data Preprocessing</div>
               <div className="skill-tag">Data Analysis</div>
             </div>
           </div>

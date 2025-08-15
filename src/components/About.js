@@ -15,7 +15,9 @@ const About = () => {
         <div className="about-text">
           <h2>About Me</h2>
           <p>
-          Hi, I’m Narae! I love taking initiative to solve challenges in my community by combining my skills in full-stack development with my passion for AI and data science.
+          Hi, I’m Narae! I love taking initiative to solve real-world challenges in my community by combining my skills in
+           full-stack development with my passion for AI and data science. I’m especially motivated by projects that improve
+            accessibility and inclusivity, because I believe technology can make a meaningful difference in everyone’s life.
           </p>
         </div>
       </div>
