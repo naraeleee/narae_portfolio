@@ -17,7 +17,7 @@ const About = () => {
         University of Toronto, Honours Bachelor of Science in Mathematics and Computer Science 
       </p>
       <p>
-        Activities and Societies: Varsity Blues Cheerleading (2021-2025), Arts and Sciences Internship Program, 2022 UC Orientation Leader
+        Activities and Societies: Varsity Blues Cheerleading (2021-2026), Arts and Sciences Internship Program, 2022 UC Orientation Leader
       </p>
     </section>
   );

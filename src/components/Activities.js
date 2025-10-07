@@ -12,7 +12,7 @@ const Activities = () => {
     {
       title: 'UofT Cheerleading',
       images: [pca2024, winterfest], // Empty array for now, add image imports/paths if available
-      description: '(2021-2025)',
+      description: '(2021-2026)',
     },
     {
       title: 'Argyle Secondary Cheerleading - Gold Team',
