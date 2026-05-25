@@ -1,13 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+/* =============================================
+   DESIGN TOKENS — #F6E3E5 × #213F95 palette
+   ============================================= */
+:root {
+  --blush: #F6E3E5;
+  --blush-dark: #EDD0D4;
+  --royal: #213F95;
+  --royal-dark: #172D6E;
+  --royal-light: #3458B8;
+  --white: #FFFFFF;
+  --text-primary: #1A1A2E;
+  --text-muted: #5A5A7A;
+  --shadow-sm: 0 2px 8px rgba(33, 63, 149, 0.10);
+  --shadow-md: 0 6px 24px rgba(33, 63, 149, 0.15);
+  --shadow-lg: 0 12px 40px rgba(33, 63, 149, 0.20);
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --transition: 0.3s ease;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: var(--blush);
+  color: var(--text-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+a {
+  color: var(--royal);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+a:hover {
+  color: var(--royal-light);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--royal);
+  font-weight: 700;
 }

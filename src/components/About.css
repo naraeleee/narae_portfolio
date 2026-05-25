@@ -1,57 +1,94 @@
-.about-section {
-    padding: 3rem 1rem;
-    background-color: #fefefe;
-  }
-  
-  .about-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-  }
-  
-  .about-image {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 50%;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-  }
-  
-  .about-text {
-    flex: 1;
-    min-width: 280px;
-  }
-  
-  .about-text h2 {
-    margin-bottom: 1rem;
-    font-size: 2rem;
-  }
-  
-  .about-text p {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
+/* About.css */
 
-  /* Fade-in animation */
+.about-section {
+  padding: 72px 1.5rem;
+  background: linear-gradient(160deg, var(--blush) 0%, #f0d8db 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: rgba(33, 63, 149, 0.07);
+  pointer-events: none;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  animation: fadeInUp 0.9s ease forwards;
+}
+
+/* Profile image */
+.about-image {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid var(--white);
+  box-shadow: 0 8px 32px rgba(33, 63, 149, 0.25);
+  transition: transform var(--transition);
+}
+
+.about-image:hover {
+  transform: scale(1.05);
+}
+
+/* Text side */
+.about-text {
+  flex: 1;
+  min-width: 280px;
+  text-align: left;
+}
+
+.about-text h2 {
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  color: var(--royal);
+  position: relative;
+  display: inline-block;
+}
+
+.about-text h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 48px;
+  height: 4px;
+  background: var(--royal-light);
+  border-radius: 2px;
+}
+
+.about-text p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+  margin-top: 1.2rem;
+}
+
+/* Fade-in animation */
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(24px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
-
-.about-container {
-  animation: fadeInUp 1s ease forwards;
-}
-  
 
 @media (max-width: 768px) {
   .about-container {
@@ -67,23 +104,15 @@
 
   .about-text {
     min-width: unset;
+    text-align: center;
   }
 
   .about-text h2 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
-  .about-text p {
-    font-size: 1rem;
-    line-height: 1.5;
+  .about-text h2::after {
+    left: 50%;
+    transform: translateX(-50%);
   }
-}
-
-
-.about-image {
-  transition: transform 0.3s ease;
-}
-
-.about-image:hover {
-  transform: scale(1.05);
 }

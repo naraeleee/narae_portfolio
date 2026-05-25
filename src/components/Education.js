@@ -8,16 +8,13 @@ const About = () => {
     <section className="edu-section">
       <h2>Education</h2>
       <div className="education-image">
-          <img className="uoft-image" src={uoft} alt="University of Toronto" />
-        </div>
+        <img className="uoft-image" src={uoft} alt="University of Toronto" />
+      </div>
       <p>
         Sep 2021-Apr 2026
       </p>
       <p>
-        University of Toronto, Honours Bachelor of Science in Mathematics and Computer Science 
-      </p>
-      <p>
-        Activities and Societies: Varsity Blues Cheerleading (2021-2026), Arts and Sciences Internship Program, 2022 UC Orientation Leader
+        University of Toronto, Honours Bachelor of Science in Mathematics, Statistics and Computer Science
       </p>
     </section>
   );

@@ -1,151 +1,147 @@
-/* src/Home.css */
+/* Home.css */
 
-.image-container {
-    position: relative;
-    max-width: 100%;
-    height: 500px;
-    margin-bottom: 5px;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay on the image */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-  }
-  
-  .hero-title {
-    font-size: 3em;
-    font-weight: bold;
-  }
-  
-  .hero-subtitle {
-    font-size: 1.5em;
-    margin-top: 10px;
-  }
+/* ── Hero (About) section handled in About.css ── */
 
-  .home-image {
-    width: 200px; /* or any size you prefer */
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%; /* this makes it a circle */
-    border: 4px solid #fff; /* optional: adds a border around the circle */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* optional: soft shadow */
-    display: block;
-    margin: 0 auto; /* centers the image if needed */
-  }
+/* ── Section shared styles ── */
+.about-section h2,
+.edu-section h2,
+.skills-section h2,
+.experience-section h2,
+.recent-projects h2,
+.contact-section h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: var(--royal);
+}
 
-  
-  /* About Me Section */
-  .about-section {
-    padding: 50px 0;
-    background-color: #f5f5f5;
-    text-align: center;
-    margin-top: 10px;
-  }
+/* ── Profile image (legacy) ── */
+.home-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--white);
+  box-shadow: 0 4px 20px rgba(33, 63, 149, 0.2);
+  display: block;
+  margin: 0 auto;
+}
 
-  .edu-section {
-    background-color: #f5f5f5;
-    text-align: center;
-    padding-top: 0;
-    margin-top: 0;
-  }
+/* ── Education section ── */
+.edu-section {
+  background-color: var(--blush);
+  text-align: center;
+  padding: 40px 20px;
+}
 
-  .about-section h2, .edu-section h2, .skills-section h2, .experience-section h2 {
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
+.edu-section p:first-of-type {
+  margin-top: 0;
+}
 
-  .edu-section p:first-of-type {
-    margin-top: 0;
-  }
+/* ── Recent Projects section ── */
+.recent-projects {
+  padding: 60px 20px;
+  background: var(--white);
+  text-align: center;
+}
 
-  
-  .about-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-  }
-  
-  /* Projects Section */
-  .recent-projects {
-    padding: 50px 0;
-    background-color: #fff;
-    text-align: center;
-  }
-  
-  .projects-carousel .project-container {
-    padding: 20px;
-  }
-  
-  .project-container {
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .project-container:hover {
-    transform: scale(1.05);
-  }
-  
-  .project-title {
-    font-size: 1.8em;
-    margin-top: 15px;
-  }
-  
-  .project-description {
-    padding: 15px;
-    font-size: 1.1em;
-    text-align: left;
-  }
-  
-  /* Skills Section */
-  .skills-section {
-    padding-bottom: 0;
-    background-color: #f0f8ff;
-    text-align: center;
-    margin-bottom: 0;
-  }
-  
-  /* Experience Section */
-  .experience-section {
-    padding: 50px 0;
-    background-color: #f5f5f5;
-    text-align: center;
-  }
-  
-  /* Contact Section */
-  .contact-section {
-    padding: 50px 0;
-    background-color: #f0f8ff;
-    text-align: center;
-  }
-  
-  .contact-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    background-color: #f0f8ff;
-  }
-  
-  .social-media {
-    margin-top: 20px;
-  }
-  
-  .social-media img {
-    width: 40px;
-    height: 40px;
-    margin: 0 10px;
-    transition: transform 0.3s ease;
-  }
-  
-  .social-media img:hover {
-    transform: scale(1.2);
-  }
-  
+.recent-projects h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+}
+
+.projects-carousel .project-container {
+  padding: 24px;
+}
+
+.project-container {
+  border: 2px solid rgba(33, 63, 149, 0.15);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  background: var(--white);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.project-container:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.project-title {
+  font-size: 1.8em;
+  margin-top: 15px;
+  color: var(--royal);
+}
+
+.project-description {
+  padding: 15px;
+  font-size: 1.05em;
+  text-align: left;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+/* ── Skills section ── */
+.skills-section {
+  padding: 60px 20px;
+  background: linear-gradient(160deg, var(--blush) 0%, #eedde0 100%);
+  text-align: center;
+}
+
+.skills-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+}
+
+/* ── Experience section ── */
+.experience-section {
+  padding: 60px 20px;
+  background: var(--white);
+  text-align: center;
+}
+
+/* ── Contact section ── */
+.contact-section {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, var(--royal) 0%, var(--royal-light) 100%);
+  text-align: center;
+  color: var(--white);
+}
+
+.contact-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: var(--white);
+}
+
+.contact-section p {
+  font-size: 1.05rem;
+  color: rgba(246, 227, 229, 0.9);
+}
+
+.contact-section a {
+  color: var(--blush);
+  font-weight: 600;
+  border-bottom: 1px solid rgba(246, 227, 229, 0.5);
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.contact-section a:hover {
+  color: var(--white);
+  border-color: var(--white);
+}
+
+/* ── Social Media Bar ── */
+.social-media {
+  margin-top: 0;
+}
+
+.social-media img {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  transition: transform var(--transition);
+}
+
+.social-media img:hover {
+  transform: scale(1.2);
+}

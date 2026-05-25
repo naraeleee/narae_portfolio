@@ -1,65 +1,95 @@
+/* Experience.css */
+
 .experience-section {
-    background-color: #f5f5f5;
-    padding: 2rem;
-    border-radius: 16px;
-    max-width: 900px;
-    margin: 0 auto;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  }
-  
-  .experience-section h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-  }
-  
-  .experience-item {
-    background-color: white;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .company-info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  
-  .company-logo {
-    width: 150px;
-    height: auto;
-    margin-bottom: 0.8rem;
-    border-radius: 8px;
-  }
-  
-  .experience-item h3 {
-    margin: 0.5rem 0 0.2rem;
-    font-size: 1.2rem;
-  }
-  
-  .experience-item h4 {
-    margin: 0;
-    font-weight: normal;
-    font-size: 1rem;
-    color: #555;
-  }
-  
-  .experience-item span {
-    display: block;
-    text-align: center;
-    margin-bottom: 1rem;
-    font-weight: bold;
-    color: #666;
-  }
-  
-  .experience-item p {
-    text-align: left;
-    margin: 0.5rem 0;
-    line-height: 1.6;
-  }
-  
+  background: var(--blush);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.experience-section h2 {
+  font-size: 2.2rem;
+  color: var(--royal);
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.experience-section h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 48px;
+  height: 4px;
+  background: var(--royal-light);
+  border-radius: 2px;
+}
+
+.experience-list {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.experience-item {
+  background: var(--white);
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  border-left: 5px solid var(--royal);
+  text-align: left;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.experience-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.company-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.company-logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 0.8rem;
+  border-radius: var(--radius-sm);
+}
+
+.experience-item h3 {
+  margin: 0.5rem 0 0.2rem;
+  font-size: 1.25rem;
+  color: var(--royal);
+}
+
+.experience-item h4 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--royal-light);
+}
+
+.experience-item span {
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+}
+
+.experience-item p {
+  text-align: left;
+  margin: 0.5rem 0;
+  line-height: 1.7;
+  color: var(--text-muted);
+}

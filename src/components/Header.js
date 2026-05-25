@@ -14,12 +14,12 @@ function Header() {
               Home
             </Link>
           </li>
-          
-          <li className="menu-item">
+
+          {/* <li className="menu-item">
             <Link to="/Experience">
               Experience
             </Link>
-          </li>
+          </li> */}
 
           {/* <li className="menu-item">
             <Link to="/SignBridge">
@@ -28,8 +28,8 @@ function Header() {
           </li> */}
 
           <li className="menu-item">
-            <Link to="/Activities">
-              Activities
+            <Link to="/Cheer">
+              Cheer
             </Link>
           </li>
           {/* <li className="menu-item">

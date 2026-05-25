@@ -1,35 +1,29 @@
 /* App.css */
 
-
-/* For screens smaller than 768px */
 @media (max-width: 768px) {
-  /* Add your responsive styles here */
   .box {
     width: 90%;
     font-size: 18px;
     height: auto;
   }
-}a
-
-
+}
 
 .app {
-  font-family: Arial, sans-serif;
-  background-color: rgb(0, 0, 0);
-  background-size: cover; 
-  background-position: center;
-  background-repeat: no-repeat; 
+  font-family: 'Outfit', Arial, sans-serif;
+  background-color: var(--blush);
+  min-height: 100vh;
 }
 
 .main-content {
   text-align: center;
 }
 
+/* ── Image container ── */
 .image-container {
   max-width: 1000px;
-  margin: 0 auto; /* Center the container horizontally */
-  overflow: hidden; /* Hide content that overflows */
-  position: relative; /* Set as positioning context for absolutely positioned child */
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
 }
 
 .home-image {
@@ -38,46 +32,91 @@
   object-fit: cover;
 }
 
+/* ── Project cards ── */
 .project-container {
-  border: 2px solid #9CAED2; /* Add an outline with a specific color */
-  padding: 10px; /* Add padding to create space between the border and content */
-  margin: 20px auto; /* Center the project containers and create spacing between them */
-  max-width: 800px; /* Limit the maximum width */
-  line-height: 1.6; /* Increase line height for better readability */
+  border: 2px solid rgba(33, 63, 149, 0.2);
+  background: var(--white);
+  padding: 10px;
+  margin: 20px auto;
+  max-width: 800px;
+  line-height: 1.6;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+
+.project-container:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
 }
 
 .project-image {
-  max-width: 100%; /* Adjust the image width to fit within the container */
-  height: auto;
+  max-width: 35%;
+  max-height: 500px;
+  margin: 0 auto;
+  border-radius: var(--radius-sm);
 }
 
 .project-title {
-  margin-top: 10px; /* Add some spacing between the image and title */
+  margin-top: 10px;
+  color: var(--royal);
+  font-weight: 700;
 }
 
 .project-description {
-  margin-top: 10px; /* Add some spacing between the title and description */
-  text-align: justify; /* Justify the text for better alignment */
+  margin-top: 10px;
+  text-align: justify;
+  color: var(--text-muted);
 }
 
+.project-link {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 20px;
+  background: var(--royal);
+  color: var(--white) !important;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 0.9em;
+  transition: background var(--transition), transform var(--transition);
+}
 
+.project-link:hover {
+  background: var(--royal-dark);
+  transform: translateY(-2px);
+}
+
+/* ── Social Media Bar ── */
 .social-media {
-  /* background: linear-gradient(#9CAED2, #F0C1AF);  */
-  background-color: white;
+  background: linear-gradient(135deg, var(--royal) 0%, var(--royal-light) 100%);
   display: flex;
   justify-content: center;
-  margin-top: 20px;
-  padding: 20px 0; /* Add padding to the top and bottom of the section */
+  align-items: center;
+  gap: 20px;
+  padding: 28px 0;
+  margin-top: 0;
 }
 
 .social-media a {
-  display: inline-block;
-  margin: 0 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: rgba(246, 227, 229, 0.15);
+  border-radius: 50%;
+  transition: background var(--transition), transform var(--transition);
+}
+
+.social-media a:hover {
+  background: rgba(246, 227, 229, 0.30);
+  transform: scale(1.15);
 }
 
 .social-media img {
-  width: 30px; /* Adjust the width of the icons as needed */
-  height: 30px; /* Adjust the height of the icons as needed */
+  width: 26px;
+  height: 26px;
+  filter: brightness(0) invert(1);
 }
 
 .github-icon {
@@ -85,53 +124,3 @@
   vertical-align: middle;
   margin-right: 5px;
 }
-
-.project-image {
-  max-width: 35%;
-  max-height: 500px;
-  margin: 0 auto;
-}
-
-
-/* 
-@font-face {
-  font-family: "Pokemon GB";
-  src: url("https://dl.dropboxusercontent.com/u/10822923/Pokemon_GB/Pokemon_GB.eot?") format("eot"),
-       url("https://dl.dropboxusercontent.com/u/10822923/Pokemon_GB/Pokemon_GB.woff") format("woff"),
-       url("https://dl.dropboxusercontent.com/u/10822923/Pokemon_GB/Pokemon_GB.ttf") format("truetype"),
-       url("https://dl.dropboxusercontent.com/u/10822923/Pokemon_GB/Pokemon_GB.svg#PokemonGB") format("svg");
-  font-weight: normal;
-  font-style: italic;
-} */
-
-/* .box {
-  font-size: 20px;
-  font-family: "Pokemon GB", Arial, sans-serif;
-  border-radius: 2px;
-  padding: 8px;
-  width: 50%;
-  height: auto;
-  line-height: 24px;
-  margin: auto;
-  background: white;
-  border: 1px solid white;
-  box-shadow: 0 1px 0 1px black,
-              inset 0 1px 0 1px black,
-              0 0 0 1px black,
-              inset 0 0 0 1px black;
-} */
-/* .box > i {
-  width: 0;
-  height: 0;
-  border: 5px solid transparent;
-  border-top-color: black;
-  margin-top: 23px;
-  animation: bounce 0.5s ease-in-out 0 infinite alternate;
-  float: right;
-} */
-/* 
-@keyframes bounce {
-  from { margin-top: 20px; }
-  to { margin-top: 23px; }
-} */
-

@@ -5,9 +5,9 @@ import bclions from '../images/bclions.jpg';
 import sea2sky from '../images/seatosky.jpeg';
 import gold from '../images/gold.jpg';
 import winterfest from '../images/winterfest.jpg';
-import './Activities.css';
+import './Cheer.css';
 
-const Activities = () => {
+const Cheer = () => {
   const activities = [
     {
       title: 'UofT Cheerleading',
@@ -28,7 +28,7 @@ const Activities = () => {
 
   return (
     <section className="activities-section">
-      <h2>My Activities</h2>
+      <h2>Cheerleading</h2>
       <div className="activities-gallery">
         {activities.map((activity, index) => (
           <div key={index} className="activity-item">
@@ -55,4 +55,4 @@ const Activities = () => {
   );
 };
 
-export default Activities;
+export default Cheer;
